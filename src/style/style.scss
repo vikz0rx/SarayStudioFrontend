@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+
+$black: #000000;
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.not-found {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found--caption {
+    color: $black;
+    font-size: 4rem;
+    font-weight: 500;
+}
