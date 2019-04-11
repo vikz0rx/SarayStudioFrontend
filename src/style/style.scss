@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
 
 $black: #000000;
+$white: #FFFFFF;
+$light-blue: #4688F1;
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -20,4 +22,127 @@ $black: #000000;
     color: $black;
     font-size: 4rem;
     font-weight: 500;
+}
+
+.split-screen {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
+.split-screen--main {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
+}
+
+.split-screen--common {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.split-screen--title {
+    margin-bottom: 10px;
+
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.split-screen--form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.full-screen {
+    position: relative;
+
+    padding: 50px 7%;
+    height: 100%;
+}
+
+.full-screen__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-screen--video {
+    position: absolute;
+    z-index: -1;
+
+    width: auto;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+}
+
+.logo--heading {
+    color: $white;
+    font-size: 4.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.logo--subheading {
+    color: $white;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+label {
+    margin-top: 10px;
+
+    font-size: .8rem;
+    font-weight: 300
+}
+
+input[type=text], input[type=password], input[type=email] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 12px 18px;
+
+    border: 1px solid $light-blue;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    padding: 12px 18px;
+
+    color: $white;
+    font-size: .7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    background-color: $light-blue;
+    border: 1px solid $light-blue;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    transition: box-shadow .2s linear;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
 }
