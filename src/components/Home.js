@@ -6,8 +6,6 @@ class Home extends React.Component {
         return (
                 <ReactFullpage
                     navigation
-                    loopTop
-                    loopBottom
                     onLeave={() => {
                         document.getElementsByClassName('full-screen--video')[0].play();
                     }}
@@ -24,11 +22,6 @@ class Home extends React.Component {
                                             <span className='logo--heading'>Saray</span>
                                             <span className='logo--subheading'>Photostudio</span>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className='section'>
-                                    <div className='full-screen'>
-                                        <h1>Тут будут новости</h1>
                                     </div>
                                 </div>
                             </ReactFullpage.Wrapper>

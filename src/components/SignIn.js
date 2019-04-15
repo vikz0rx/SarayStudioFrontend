@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SignIn extends React.Component {
     constructor () {
@@ -30,6 +31,7 @@ class SignIn extends React.Component {
 
                         <input type='submit' value='Продолжить' />
                     </form>
+                    <Link to='/signup' className='link'>Еще нет аккаунта? Зарегистрируйтесь</Link>
                 </div>
                 <div className='split-screen--common' style={{backgroundImage: 'url(https://bit.ly/2VFIDWU)'}}></div>
             </section>
