@@ -76,6 +76,54 @@ $light-blue: #4688F1;
     align-items: center;
 }
 
+.stuff-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.stuff-item {
+    overflow: hidden;
+
+    width: 100%;
+    height: 350px;
+}
+
+.stuff-item--image-container {
+    height: 200px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stuff-item--image {
+    width: 80%;
+    height: auto;
+}
+
+.stuff-item--info {
+    overflow-y: scroll;
+
+    height: 50px;
+}
+
+.stuff-name {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.stuff-description {
+    margin: 5px 0;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.stuff-cost {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
 .full-screen--video {
     position: absolute;
     z-index: -1;
